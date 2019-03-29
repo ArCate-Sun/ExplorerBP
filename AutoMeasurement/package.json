@@ -1,0 +1,10 @@
+{
+  "name": "AutoMeasurement",
+  "version": "1.0.0",
+  "description": "Auto measurement with LightHouse",
+  "main": "index.js",
+  "repository": "https://github.com/ArCate-Sun/ExploreBP.git",
+  "author": "ACat, Smirit",
+  "license": "MIT",
+  "private": false
+}

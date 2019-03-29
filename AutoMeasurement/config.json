@@ -1,0 +1,39 @@
+{
+    "output_path": "./data/result.json",
+    "rewrite": true,
+    "time": 5,
+    "urls": [
+        {
+            "title": "Xinhuanet.com",
+            "url": "http://www.xinhuanet.com"
+        },
+        {
+            "title": "Hao123.com",
+            "url": "http://www.hao123.com"
+        },
+        {
+            "title": "Cnblogs.com",
+            "url": "http://www.cnblogs.com"
+        },
+        {
+            "title": "163.com",
+            "url": "http://www.163.com"
+        },
+        {
+            "title": "Babytree.com",
+            "url": "http://www.babytree.com"
+        },
+        {
+            "title": "So.com",
+            "url": "http://www.so.com"
+        },
+        {
+            "title": "Tianya.cn",
+            "url": "http://www.tianya.cn"
+        },
+        {
+            "title": "Zhihu.com",
+            "url": "http://www.zhihu.com"
+        }
+    ]
+}
