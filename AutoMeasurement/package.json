@@ -6,5 +6,14 @@
   "repository": "https://github.com/ArCate-Sun/ExploreBP.git",
   "author": "ACat, Smirit",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "chrome-launcher": "^0.10.5",
+    "fs": "^0.0.1-security",
+    "lighthouse": "^4.3.0",
+    "net-ping": "^1.2.3",
+    "node-cmd": "^3.0.0",
+    "os": "^0.1.1"
+  }
 }
