@@ -53,7 +53,7 @@ function loadTask(filePath) {
 async function main(from) {
 
 	loadTask("./config.json");
-	
+
 	let logger = undefined;
 	if (task.rewrite) {
 		logger = new Logger(task.out, Logger.REWRITE_MODE);
@@ -70,10 +70,10 @@ async function main(from) {
 		console.error("打开 Chrome 失败.");
 		return;
 	}
-	
+
 	let start = from === undefined;
 	for (let i = 0; i < task.websites.length; ++i) {
-		
+
 		let item = task.websites[i];
 
 		if (!start && from !== item.id && from !== item.url) {
@@ -83,7 +83,7 @@ async function main(from) {
 		start = true;
 
 		for (var t = 0; t < task.times; ++t) {
-			
+
 			// get host
 			let host = item.url.replace(/http:\/\//i, "").replace(/https:\/\//i, "");
 			host.substr(0, host.indexOf('/'));
@@ -96,9 +96,9 @@ async function main(from) {
 				let lhr = await lh.runLighthouse(item.url);
 				let firstMeaningfulPaintTime = lhr['audits']['first-meaningful-paint']['rawValue'];
 
-        // log
-        let msg = `${item.id}\t${host}\t${firstMeaningfulPaintTime}\t${pr.ip}\t${pr.time_avg}\t${pr.ttl_avg}`;
-        console.log(msg);
+				// log
+				let msg = `${item.id}\t${host}\t${firstMeaningfulPaintTime}\t${pr.ip}\t${pr.time_avg}\t${pr.ttl_avg}`;
+				console.log(msg);
 				logger.log(msg);
 			} catch (error) {
 				console.error(error);
